@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="unable_to_invoke_camera">Unable to invoke camere, without permisson!</string>
+    <string name="buy">Buy</string>
+</resources>
