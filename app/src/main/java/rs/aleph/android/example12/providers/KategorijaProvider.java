@@ -1,4 +1,4 @@
-package rs.aleph.android.example12.provider;
+package rs.aleph.android.example12.providers;
 
 import java.util.ArrayList;
 import java.util.List;

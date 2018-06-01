@@ -1,24 +1,14 @@
 package rs.aleph.android.example12.activities;
 
-import android.Manifest;
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.view.View;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.RatingBar;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -29,12 +19,10 @@ import java.io.InputStream;
 import java.util.List;
 
 import rs.aleph.android.example12.R;
-import rs.aleph.android.example12.model.Jelo;
-import rs.aleph.android.example12.model.Kategorija;
 import rs.aleph.android.example12.model.Sastojak;
-import rs.aleph.android.example12.provider.JeloProvider;
-import rs.aleph.android.example12.provider.KategorijaProvider;
-import rs.aleph.android.example12.provider.SastojciProvider;
+import rs.aleph.android.example12.providers.JeloProvider;
+import rs.aleph.android.example12.providers.KategorijaProvider;
+import rs.aleph.android.example12.providers.SastojciProvider;
 
 // Each activity extends Activity class
 public class SecondActivity extends Activity {

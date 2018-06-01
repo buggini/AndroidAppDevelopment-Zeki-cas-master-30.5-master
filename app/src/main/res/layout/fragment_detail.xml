@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp">
+
+    <!-- Declares a button that opens a browser -->
+    <Button
+        android:id="@+id/btn_open_camera"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="btnOpenCameraClicked"
+        android:text="@string/open_camera_name"
+        android:drawableLeft="@drawable/ic_action_camera"/>
+    <WebView
+        android:id="@+id/pageInfo"
+        android:layout_width="0.1dp"
+        android:layout_height="0.1dp" />
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="371dp"
+        android:layout_height="90dp" />
+
+    <!-- TextView displays text to the user. -->
+    <TextView
+        android:id="@+id/tv_ime"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="150dp"
+        android:text="Ime Jela: " />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="166dp"
+        android:layout_height="29dp"
+        android:layout_marginRight="150dp" />
+
+    <Spinner
+        android:id="@+id/sp_lista_sastojka"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="190dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_opis"
+        android:text="Opis: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_kaloriska"
+        android:text="Kaloriska Vrednost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_kaloriska_vrednost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- TextView displays text to the user. -->
+    <TextView
+        android:id="@+id/tv_cena"
+        android:text="Cena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_cena_hrane"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Spinners provide a quick way to select one value from a set. -->
+    <Spinner
+        android:id="@+id/sp_kategorija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- Button can be pressed, or clicked, by the user to perform an action. -->
+
+    <RatingBar
+        android:id="@+id/rb_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5" />
+
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/buy" />
+
+
+
+
+</RelativeLayout>

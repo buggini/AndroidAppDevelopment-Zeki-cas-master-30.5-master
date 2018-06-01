@@ -1,6 +1,8 @@
 package rs.aleph.android.example12.activities;
 
 import android.app.Activity;
+
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,13 +16,26 @@ import android.widget.Toast;
 import java.util.List;
 
 import rs.aleph.android.example12.R;
-import rs.aleph.android.example12.provider.JeloProvider;
+import rs.aleph.android.example12.providers.JeloProvider;
+
+import rs.aleph.android.example12.fragments.DetailFragment;
+import rs.aleph.android.example12.fragments.ListFragment;
 
 // Each activity extends Activity class
-public class FirstActivity extends Activity {
+public class FirstActivity extends Activity implements ListFragment.OnItemSelectedListener{
 
 	//29.05.2018.
 	//Home Work
+
+	private boolean landscape = false;
+
+	private int position=0;
+
+	private ListFragment listFragment = null;
+
+	private DetailFragment detailFragment= null;
+
+
 	static final int PICK_CONTACT_REQUEST = 0;  // The request code
 
 	// The activity's state
@@ -207,4 +222,26 @@ public class FirstActivity extends Activity {
             }
 		}
 	}
+
+//    @Override
+    public void onItemSelected(int position) {}
+//        // Set position
+//        this.position = position;
+//
+//        // Shows a toast message (a pop-up message)
+//        Toast.makeText(getBaseContext(), "FirstActivity.onItemSelected()", Toast.LENGTH_SHORT).show();
+//
+////        if (landscape) {
+////            // If the device is in the landscape mode updates detail fragment's content.
+////            detailFragment.updateContent(position);
+////        } else {
+////            // If the device is in the portrait mode sets detail fragment's content and replaces master fragment with detail fragment in a fragment transaction.
+////            detailFragment.setContent(position);
+////            FragmentTransaction ft = getFragmentManager().beginTransaction();
+////            ft.replace(R.id.master_view, detailFragment, "Detail_Fragment_1");
+////            ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+////            ft.addToBackStack(null);
+////            ft.commit();
+//        }
+//    }
 }
